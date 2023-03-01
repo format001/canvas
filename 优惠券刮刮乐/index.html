@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style type="text/css">
+    body{
+      margin: 0;
+    }
+    .container{
+      width: 540px;
+      height: 268px;
+      /*background-color: salmon;*/
+      /*background-color: darkturquoise;*/
+      /*background-color: cadetblue;*/
+      /*background-color: aqua;*/
+      margin: 50px auto;
+    }
+
+    .coupon-wrap {
+      width: 540px;
+      height: 268px;
+      padding: 20px;
+      background-color: cadetblue;
+      box-sizing: border-box;
+    }
+
+    .coupon-bd{
+      position: relative;
+      width: 500px;
+      height: 228px;
+      padding: 15px;
+      background-color: #FEF7D6;
+      box-sizing: border-box;
+    }
+
+    .coupon-bd::before,
+    .coupon-bd::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 0;
+      height: 100%;
+    }
+
+    .coupon-bd::before{
+      border-right: 10px dotted cadetblue;
+      left: -5px;
+    }
+
+    .coupon-bd::after{
+      border-left: 10px dotted cadetblue;
+      right: -5px;
+    }
+
+    .coupon-canvas{
+        width: 100%;
+        height: 100%;
+      /*background-color: darkorange;*/
+    }
+
+    canvas{
+      background: url('1.jpg') no-repeat 0 0/100% 100%;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="coupon-wrap">
+    <div class="coupon-bd">
+        <div class="coupon-canvas">
+          <canvas id="J_canvas" width="470" height="198"></canvas>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+<script type="text/javascript" src="index.js"></script>
+</html>

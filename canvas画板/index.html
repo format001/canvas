@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style type="text/css">
+    body{
+      margin: 0;
+    }
+    .container{
+      width: 1000px;
+      height: 500px;
+      /*background-color: cadetblue;*/
+      /*background-color: salmon;*/
+      /*background-color: darkturquoise;*/
+      /*background-color: cadetblue;*/
+      /*background-color: aqua;*/
+      margin: 50px auto;
+      border-radius: 30px;
+      border: 1px solid cadetblue;
+    }
+
+    .tool-bar{
+      width: 1000px;
+      height: 50px;
+      margin: 10px auto;
+    }
+
+    .tool-bar div {
+      float: left;
+      width: 80px;
+      height: 80px;
+      border: 1px solid cadetblue;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+
+    .tool-bar .color.red{
+      background-color: orangered;
+    }
+
+    .tool-bar .color.green{
+      background-color: darkturquoise;
+    }
+
+    .tool-bar .color.yellow{
+      background-color: gold;
+    }
+
+    .tool-bar .color.blur{
+      background-color: aqua;
+    }
+
+    .tool-bar .line span{
+      display: block;
+      margin: 0 auto;
+      background-color: #424242;
+      border-radius: 50%;
+    }
+
+    .tool-bar .line.line-4 span{
+      margin-top: 38px;
+      width: 4px;
+      height: 4px;
+    }
+
+    .tool-bar .line.line-8 span{
+      margin-top: 37px;
+      width: 8px;
+      height: 8px;
+    }
+
+    .tool-bar .line.line-12 span{
+      margin-top: 36px;
+      width: 12px;
+      height: 12px;
+    }
+
+    .tool-bar .remove{
+      text-align: center;
+      line-height: 80px;
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <canvas id="canvas" width="1000" height="500"></canvas>
+  </div>
+
+<div class="tool-bar J_toolsBar">
+  <div class="color red" data-color="orangered"></div>
+  <div class="color green" data-color="darkturquoise"></div>
+  <div class="color yellow" data-color="gold"></div>
+  <div class="color blur" data-color="aqua"></div>
+  <div class="line line-4" data-line="4">
+    <span></span>
+  </div>
+  <div class="line line-8" data-line="8">
+    <span></span>
+  </div>
+  <div class="line line-12" data-line="12">
+    <span></span>
+  </div>
+  <div class="remove">X</div>
+</div>
+
+
+</body>
+<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" >
+
+
+</script>
+</html>
